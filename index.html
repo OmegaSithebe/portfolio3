@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO Sithebe Portfolio</title>
+    <!-- Linking Font Awesome font icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">OMEGA</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#course" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#team" class="nav-link">Dark Mode</a>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link login-signup-button" onclick="redirectToLogin()">Get Started</button>
+                </li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h1 class="title">Hello, I am</h1>
+                    <h3 class="subtitle">Nkosingiphile Omega Sithebe</h3>
+                    <ul>
+                        <li class="description">Software Development Graduate</li>
+                        <li class="description">Microsoft 365 Certified</li>
+                        <li class="description">UX/UI Desginer</li>
+                    </ul>
+    
+                    <div class="buttons">
+                        <a href="#course" class="button book-course">More</a>
+                        <a href="#contact" class="button contact-us">Get in touch</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/background_imageNOS.png" alt="Hero" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="images/sithebeAbout.jfif" alt="About Us" 
+                    class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">About Me</h2>
+                    
+                    <p>Welcome to the journey of <strong>NO Sithebe</strong>, a dedicated software engineer passionate about excellence and innovation. With experience at <strong>Investec</strong>, <strong>Data Science South Africa</strong>, and now with <strong>TechnoSpeak Digital Marketing</strong>, I've honed my skills in:</p>
+    
+                    <div class="skills">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="icon">💻</span>
+                                <h3>Full Stack Development</h3>
+                            </div>
+                            <p>Proficient in CSS, JavaScript, HTML, C#, and C++.</p>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="icon">☁️</span>
+                                <h3>Cloud & Database Solutions</h3>
+                            </div>
+                            <p>Expertise in MongoDB, MySQL, and scalable cloud infrastructure.</p>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="icon">🛠️</span>
+                                <h3>Computer Technician</h3>
+                            </div>
+                            <p>Skills in Hardware Troubleshooting, Software Installation & Configuration, Networking, HomeLab, and Customer Support. <br> <strong>Certification:</strong> CompTIA A+ (2025/09).</p>
+                        </div>
+                    </div>
+                    <p class="closing-statement">My commitment to continuous learning and professional growth drives me to leverage the latest technologies to deliver high-quality software solutions. Let's collaborate to create a brighter future through technology.</p>                
+                    <br>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-cards">
+                
+                <!-- Velisa Africa -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Velisa Africa (Host Data Science) - Computer Technician</h3>
+                        <p>📅 <strong>Jan 2024 - Nov 2024 (11 Months) | Jan 2025 - Nov 2025 (11 Months)</strong></p>
+                        <p>📍 3 Georgian Cres W, Bryanston East, Johannesburg, 2191</p>
+                    </div>
+                    <h4>Accomplishments:</h4>
+                    <ul class="experience-list">
+                        <li class="experience-list-item">🛠️ Troubleshooting and network support.</li>
+                        <li class="experience-list-item">🏠 HomeLabs and administration configuration.</li>
+                        <li class="experience-list-item">☁️ Microsoft Cloud certifications.</li>
+                        <li class="experience-list-item">📞 Helpdesk support.</li>
+                        <li class="experience-list-item">📈 Building a digital marketing business (TechnoSpeak).</li>
+                    </ul>
+                </div>
+                
+                <!-- Investec Private Bank -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Investec Private Bank - Software Engineer</h3>
+                        <p>📅 <strong>Aug 2022 - Aug 2023 (12 Months)</strong></p>
+                        <p>📍 100 Grayston Dr, Sandown, Sandton, 2196</p>
+                    </div>
+                    <h4>Accomplishments:</h4>
+                    <ul class="experience-list">
+                        <li class="experience-list-item">📱 Developed and maintained an online banking app.</li>
+                        <li class="experience-list-item">🔍 Conducted system analysis and debugging for performance improvements.</li>
+                        <li class="experience-list-item">🔗 Integrated third-party APIs for enhanced functionality.</li>
+                        <li class="experience-list-item">🤝 Collaborated with stakeholders.</li>
+                        <li class="experience-list-item">📝 Maintained clean code.</li>
+                        <li class="experience-list-item">📊 Stayed updated on tech trends.</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+
+        
+        <!-- Education Section -->
+        <section class="education-section" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education-container swiper">
+                <div class="slider-wrapper swiper-wrapper">
+                    <!-- Education Item 1 -->
+                    <div class="education-item swiper-slide">
+                        <i class="fas fa-graduation-cap icon"></i>
+                        <h3 class="education-title">National Diploma in Information Technology</h3>
+                        <h4 class="institution">Tshwane University of Technology</h4>
+                        <p class="year">2024</p>
+                        <ul class="education-details">
+                            <li>Academic and Language Skills <strong>(First Year)</strong></li>
+                            <li>ICT Mathematical Skills</li>
+                            <li>Computer Fundamentals</li>
+                            <li>Computing System <strong>(Second Year)</strong></li>
+                            <li>Development Software</li>
+                            <li>Technical Programming</li>
+                            <li>Information Systems</li>
+                            <li>Industry Exposure IIIB <strong>(Third Year)</strong></li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Item 2 -->
+                    <div class="education-item swiper-slide">
+                        <i class="fas fa-book icon"></i>
+                        <h3 class="education-title">National Senior Certificate</h3>
+                        <h4 class="institution">Utrecht Secondary High School</h4>
+                        <p class="year">2014</p>
+                        <ul class="education-details">
+                            <li>English Home Language <strong>(HL)</strong></li>
+                            <li>Afrikaans 1st Language <strong>(FAL)</strong></li>
+                            <li>Mathematics Literacy <strong>(Maths Lit)</strong></li>
+                            <li>Business Studies <strong>(BS)</strong></li>
+                            <li>Engineering Graphics & Design <strong>(EGD)</strong></li>
+                            <li>Computer Application Technology <strong>(CAT)</strong></li>
+                            <li>Life Orientation <strong>(LO)</strong></li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Item 3 -->
+                    <div class="education-item swiper-slide">
+                        <i class="fas fa-laptop-code icon"></i>
+                        <h3 class="education-title">Computer Technician</h3>
+                        <h4 class="institution">Velisa Africa (Data Science)</h4>
+                        <p class="year">2024</p>
+                        <ul class="education-details">
+                            <li>Microsoft Office Specialist (MOS) Excel Certificate</li>
+                            <li>CompTIA A+ Certificate (2025/09)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Item 4 -->
+                    <div class="education-item swiper-slide">
+                        <i class="fas fa-shield-alt icon"></i>
+                        <h3 class="education-title">Microsoft Security</h3>
+                        <h4 class="institution">Netcampus</h4>
+                        <p class="year">2025</p>
+                        <ul class="education-details">
+                            <li>Life Skills</li>
+                            <li>Authentic Professionalism, Digital Marketing, Effective Emails</li>
+                            <li>End User Computing</li>
+                            <li>AZ 104 Microsoft Azure Administrator</li>
+                            <li>SC 900 Microsoft Security Fundamentals</li>
+                            <li>AZ-500 Microsoft Azure Security Technologies</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation Buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+
+        <!-- Certifications Section -->
+        <section class="certifications-section" id="certifications">
+            <h2 class="section-title">Certifications</h2>
+            <div class="swiper certifications-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Certification Card 1 -->
+                    <div class="swiper-slide certification-card">
+                        <img src="images/Microsoft Certified Azure Fundamentals.png" alt="Microsoft Logo" class="cert-logo">
+                        <h3 class="cert-title">Microsoft Certified: Azure Fundamentals</h3>
+                        <p class="cert-provider">Microsoft</p>
+                        <p class="cert-issued">Issued: July 01, 2022</p>
+                        <p class="cert-skills"><strong>Skills:</strong> Foundational level knowledge of cloud services and how those services are provided</p>
+                        <a href="https://www.credly.com/earner/earned/badge/3a003d90-5362-4881-81ad-78473106f643" class="show-credential" target="_blank">Show Credential</a>
+                    </div>
+
+                    <!-- Certification Card 2 -->
+                    <div class="swiper-slide certification-card">
+                        <img src="images/Microsoft Certified Security, Compliance, and Identity Fundamentals.png" alt="Microsoft Logo" class="cert-logo">
+                        <h3 class="cert-title">Microsoft Certified: Security, Compliance, and Identity Fundamentals</h3>
+                        <p class="cert-provider">Microsoft</p>
+                        <p class="cert-issued">Issued: August 25, 2022</p>
+                        <p class="cert-skills"><strong>Skills:</strong> Understanding of security, compliance, and identity (SCI) across cloud-based and related Microsoft services</p>
+                        <a href="https://www.credly.com/earner/earned/badge/682eca2d-a984-49e3-9b91-3fc0763465a7" class="show-credential" target="_blank">Show Credential</a>
+                    </div>
+
+                    <!-- Certification Card 3 -->
+                    <div class="swiper-slide certification-card">
+                        <img src="images/Microsoft Office Specialist Excel Associate (Microsoft 365 Apps).png" alt="Microsoft Logo" class="cert-logo">
+                        <h3 class="cert-title">Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps)</h3>
+                        <p class="cert-provider">Microsoft</p>
+                        <p class="cert-issued">Issued: November 07, 2024</p>
+                        <p class="cert-skills"><strong>Skills:</strong> Understanding of Excel and the ability to complete tasks independently</p>
+                        <a href="https://www.credly.com/earner/earned/badge/fbb50801-7957-4cb0-b029-06b041c1faa6" class="show-credential" target="_blank">Show Credential</a>
+                    </div>
+
+                    <!-- Certification Card 4 -->
+                    <div class="swiper-slide certification-card">
+                        <img src="images/Data Science Foundations - Level 1.png" alt="IBM Logo" class="cert-logo">
+                        <h3 class="cert-title">Data Science Foundations - Level 1</h3>
+                        <p class="cert-provider">IBM</p>
+                        <p class="cert-issued">Issued: [Add Issued Date]</p>
+                        <p class="cert-skills"><strong>Skills:</strong> Understanding of the possibilities and opportunities that data science, analytics, and big data bring to new applications in any industry</p>
+                        <a href="https://www.credly.com/earner/earned/badge/f07d3485-58f8-480c-b7b8-219c3a3e795b" class="show-credential" target="_blank">Show Credential</a>
+                    </div>
+
+                    <!-- Certification Card 5 -->
+                    <div class="swiper-slide certification-card">
+                        <img src="images/ISC2 Candidate.png" alt="ISC2 Logo" class="cert-logo">
+                        <h3 class="cert-title">ISC2 Candidate</h3>
+                        <p class="cert-provider">ISC2</p>
+                        <p class="cert-issued">Issued: June 21, 2024</p>
+                        <p class="cert-skills"><strong>Skills:</strong> Entry-level Certified in Cybersecurity certification</p>
+                        <a href="https://www.credly.com/earner/earned/badge/8590110a-a1de-43d3-aa5a-62c3ea951118" class="show-credential" target="_blank">Show Credential</a>
+                    </div>
+
+                    <!-- Certification Card 6 -->
+                    <div class="swiper-slide certification-card">
+                        <img src="images/Introduction to Cybersecurity.png" alt="CISCO Logo" class="cert-logo">
+                        <h3 class="cert-title">Introduction to Cybersecurity</h3>
+                        <p class="cert-provider">CISCO</p>
+                        <p class="cert-issued">Issued: March 02, 2021</p>
+                        <p class="cert-skills"><strong>Skills:</strong> Knowledge of Cybersecurity</p>
+                        <a href="https://www.credly.com/earner/earned/badge/53d48589-b68c-4e1b-8112-a34f51236fb4" class="show-credential" target="_blank">Show Credential</a>
+                    </div>
+
+                    <!-- Certification Card 7 -->
+                    <div class="swiper-slide certification-card">
+                        <img src="images/Introduction to IoT.png" alt="CISCO Logo" class="cert-logo">
+                        <h3 class="cert-title">Introduction to IoT</h3>
+                        <p class="cert-provider">CISCO</p>
+                        <p class="cert-issued">Issued: November 30, 2023</p>
+                        <p class="cert-skills"><strong>Skills:</strong> Knowledge of IoT and has an understanding of how it enables the Digital Transformation</p>
+                        <a href="https://www.credly.com/earner/earned/badge/21bc1fa4-99ff-4959-8b1b-07b23707eefc" class="show-credential" target="_blank">Show Credential</a>
+                    </div>
+
+                    <!-- Certification Card 8 -->
+                    <div class="swiper-slide certification-card">
+                        <img src="images/Ethical Hacker.png" alt="CISCO Logo" class="cert-logo">
+                        <h3 class="cert-title">Ethical Hacker</h3>
+                        <p class="cert-provider">CISCO</p>
+                        <p class="cert-issued">Issued: January 11, 2024</p>
+                        <p class="cert-skills"><strong>Skills:</strong> Understanding of the legal and compliance requirements and is proficient in the art of scoping, executing, reporting vulnerability assessments, and recommending mitigation strategies</p>
+                        <a href="https://www.credly.com/earner/earned/badge/d5fdb0a2-1f90-4aba-9aa4-329018f8a462" class="show-credential" target="_blank">Show Credential</a>
+                    </div>
+
+                    <!-- Certification Card 9 -->
+                    <div class="swiper-slide certification-card">
+                        <img src="images/Networking Basics.png" alt="CISCO Logo" class="cert-logo">
+                        <h3 class="cert-title">Networking Basics</h3>
+                        <p class="cert-provider">CISCO</p>
+                        <p class="cert-issued">Issued: March 04, 2024</p>
+                        <p class="cert-skills"><strong>Skills:</strong> Knowledge of the types of networks, how they work, how devices send and receive data, the types of network cabling, how IP addresses find information on the Internet, how transport and applications operate, and has practiced building a home wireless network</p>
+                        <a href="https://www.credly.com/earner/earned/badge/598ab76f-74f3-48bb-8611-c1dbbe53fe4d" class="show-credential" target="_blank">Show Credential</a>
+                    </div>
+
+                    <!-- Certification Card 10 -->
+                    <div class="swiper-slide certification-card">
+                        <img src="images/Networking Devices and Initial Configuration.png" alt="CISCO Logo" class="cert-logo">
+                        <h3 class="cert-title">Networking Devices and Initial Configuration</h3>
+                        <p class="cert-provider">CISCO</p>
+                        <p class="cert-issued">Issued: March 11, 2024</p>
+                        <p class="cert-skills"><strong>Skills:</strong> Characteristics and benefits of cloud and virtualization, explored how to provide Internet Protocol (IP) addresses to devices, calculate an IP addressing scheme, configured Cisco devices to create a small network, and tested for connectivity issues</p>
+                        <a href="https://www.credly.com/earner/earned/badge/db345bfa-1584-48c4-b1e7-67ab3945b502" class="show-credential" target="_blank">Show Credential</a>
+                    </div>
+
+                    <!-- Certification Card 11 -->
+                    <div class="swiper-slide certification-card">
+                        <img src="images/Network Support and Security.png" alt="CISCO Logo" class="cert-logo">
+                        <h3 class="cert-title">Network Support and Security</h3>
+                        <p class="cert-provider">CISCO</p>
+                        <p class="cert-issued">Issued: March 19, 2024</p>
+                        <p class="cert-skills"><strong>Skills:</strong> Knowledge to support endpoints, networks, and users including diagnostics and documentation as a member of a help desk team as well as an in-depth view of troubleshooting of networks and endpoints and knowledge and skills regarding supporting users and networks remotely</p>
+                        <a href="https://www.credly.com/earner/earned/badge/0afb8152-7131-43db-9490-f495fc48b0eb" class="show-credential" target="_blank">Show Credential</a>
+                    </div>
+
+                    <!-- Certification Card 12 -->
+                    <div class="swiper-slide certification-card">
+                        <img src="images/Networking Devices and Initial Configuration.png" alt="CISCO Logo" class="cert-logo">
+                        <h3 class="cert-title">Network Addressing and Basic Troubleshooting</h3>
+                        <p class="cert-provider">CISCO</p>
+                        <p class="cert-issued">Issued: March 27, 2024</p>
+                        <p class="cert-skills"><strong>Skills:</strong> Knowledge of physical, data link, and network layers, how they work together to provide end-to-end connectivity, and also understands IPv6 addressing functions and how to obtain one and the neighbor discovery process</p>
+                        <a href="https://www.credly.com/earner/earned/badge/d2590717-33ac-4aac-b268-52b935298503" class="show-credential" target="_blank">Show Credential</a>
+                    </div>
+
+                    <!-- Certification Card 13 -->
+                    <div class="swiper-slide certification-card">
+                        <img src="images/Endpoint Security.png" alt="CISCO Logo" class="cert-logo">
+                        <h3 class="cert-title">Endpoint Security</h3>
+                        <p class="cert-provider">CISCO</p>
+                        <p class="cert-issued">Issued: August 09, 2024</p>
+                        <p class="cert-skills"><strong>Skills:</strong> Understanding of basic concepts of network security, as well as operating systems and endpoint security</p>
+                        <a href="https://www.credly.com/earner/earned/badge/9d1bf7a4-acc1-4975-a6c7-8f4935bf7472" class="show-credential" target="_blank">Show Credential</a>
+                    </div>
+
+                    <!-- Certification Card 14 -->
+                    <div class="swiper-slide certification-card">
+                        <img src="images/Cyber Threat Management.png" alt="CISCO Logo" class="cert-logo">
+                        <h3 class="cert-title">Cyber Threat Management</h3>
+                        <p class="cert-provider">CISCO</p>
+                        <p class="cert-issued">Issued: August 21, 2024</p>
+                        <p class="cert-skills"><strong>Skills:</strong> Familiar with cybersecurity policies and governance to ensure an organization complies with ethics standards and legal and regulatory frameworks</p>
+                        <a href="https://www.credly.com/earner/earned/badge/5d7ac9a2-7b85-4589-b782-3e78ca56dbbd" class="show-credential" target="_blank">Show Credential</a>
+                    </div>
+                </div>
+                <!-- Swiper Controls -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-toggle">
+                <button id="technicalBtn" class="toggle-btn active">Technical Skills</button>
+                <button id="softBtn" class="toggle-btn">Soft Skills</button>
+            </div>
+
+            <!-- Technical Skills -->
+            <div id="technicalSkills" class="skills-content">
+                <div class="skill-card">
+                    <div class="icon-circle"><i class="fas fa-code"></i></div>
+                    <h3>Programming Languages</h3>
+                    <p>Java, C#, JavaScript (Vue.js), React, Angular, Python, PHP, HTML, CSS, SQL.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-circle"><i class="fas fa-tools"></i></div>
+                    <h3>Frameworks/Tools</h3>
+                    <p>.NET Core, Bootstrap, Vue.js, Flutter (Dart), RESTful APIs, Laravel, Slim Framework.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-circle"><i class="fas fa-database"></i></div>
+                    <h3>Database</h3>
+                    <p>Microsoft SQL, PostgreSQL, MySQL.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-circle"><i class="fas fa-terminal"></i></div>
+                    <h3>Development Tools</h3>
+                    <p>Figma, Visual Studio Code, Git, Azure, AWS (EC2, S3).</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-circle"><i class="fas fa-network-wired"></i></div>
+                    <h3>Networking</h3>
+                    <p>Building, maintaining and troubleshooting network devices and relationships to foster collaboration and opportunities.</p>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div id="softSkills" class="skills-content hidden">
+                <div class="skill-card">
+                    <div class="icon-square"><i class="fas fa-users"></i></div>
+                    <h3>Teamwork</h3>
+                    <p>Collaborative and cooperative in team settings.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-square"><i class="fas fa-comments"></i></div>
+                    <h3>Communication</h3>
+                    <p>Effective verbal and written communication skills.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-square"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Problem-Solving</h3>
+                    <p>Innovative solutions to complex problems.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-square"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Time Management</h3>
+                    <p>Efficiently managing and prioritizing tasks.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-square"><i class="fas fa-chess-king"></i></div>
+                    <h3>Leadership</h3>
+                    <p>Leading and guiding teams to success.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-square"><i class="fas fa-heart"></i></div>
+                    <h3>Empathy</h3>
+                    <p>Understanding and sharing the feelings of others.</p>
+                </div>
+            </div>
+        </section>
+    
+
+         <!-- Contact Us section -->
+         <section class="contact-section" id="contact">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="contact-subtitle">I’d love to hear from you! Whether it’s a project, a question, or just to say hello, feel free to reach out.</p>
+            
+            <div class="contact-grid">
+                <!-- Address -->
+                <div class="contact-item">
+                    <div class="contact-icon"><a href="https://www.google.co.za/maps/place/4327+Magaqane+St,+Pimville+Zone+4,+Pimville,+1809/@-26.2729841,27.8939101,17z/data=!4m6!3m5!1s0x1e95a7a0a78651bb:0xae50d0947aeac2fe!8m2!3d-26.2729889!4d27.896485!16s%2Fg%2F11jsl188_v?hl=en&entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D"><i class="fas fa-map-marker-alt"></i></a></div>
+                    <h3>Address</h3>
+                    <p>4327 Magaqane Street, Pimville Zone 4, Soweto, Johannesburg, Gauteng, 1809</p>
+                </div>
+                <!-- LinkedIn -->
+                <div class="contact-item">
+                    <div class="contact-icon"><a href="https://www.linkedin.com/in/nkosingiphile-omega-sithebe-82724920b/" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/nkosingiphile-omega-sithebe-82724920b/</p>
+                </div>
+                <!-- Call -->
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Call Us</h3>
+                    <p>+27 60 674 9861</p>
+                </div>
+                <!-- Email -->
+                <div class="contact-item">
+                    <div class="contact-icon"><a href="mailto:rogersithebe@gmail.com"><i class="fas fa-envelope"></i></a></div>
+                    <h3>Email Us</h3>
+                    <p>rogersithebe@gmail.com</p>
+                </div>
+            </div>
+        </section>
+        
+
+          <!-- Footer section -->
+          <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">© 2025 Nkosingiphile Omega Sithebe</p>
+
+                <p class="policy-text">
+                    <a href="#" class="policy-link">All Rights Reserved</a>
+                    <span class="separator">•</span>
+                    <a href="#" class="policy-link">Privacy policy</a>
+                </p>
+            </div>
+          </footer>
+
+    </main>
+
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
