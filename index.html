@@ -29,10 +29,7 @@
                     <a href="#course" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#team" class="nav-link">Dark Mode</a>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link login-signup-button" onclick="redirectToLogin()">Get Started</button>
+                    <a href="#contact"><button class="nav-link login-signup-button" >Get Started</button></a>
                 </li>
             </ul>
             <button id="menu-open-button" class="fas fa-bars"></button>
@@ -53,7 +50,7 @@
                     </ul>
     
                     <div class="buttons">
-                        <a href="#course" class="button book-course">More</a>
+                        <a href="#about" class="button book-course">More</a>
                         <a href="#contact" class="button contact-us">Get in touch</a>
                     </div>
                 </div>
@@ -398,7 +395,7 @@
                 <div class="skill-card">
                     <div class="icon-circle"><i class="fas fa-tools"></i></div>
                     <h3>Frameworks/Tools</h3>
-                    <p>.NET Core, Bootstrap, Vue.js, Flutter (Dart), RESTful APIs, Laravel, Slim Framework.</p>
+                    <p>.NET Core, Bootstrap, RESTful APIs.</p>
                 </div>
                 <div class="skill-card">
                     <div class="icon-circle"><i class="fas fa-database"></i></div>
@@ -408,7 +405,7 @@
                 <div class="skill-card">
                     <div class="icon-circle"><i class="fas fa-terminal"></i></div>
                     <h3>Development Tools</h3>
-                    <p>Figma, Visual Studio Code, Git, Azure, AWS (EC2, S3).</p>
+                    <p>Figma, Visual Studio Code, Git, Azure.</p>
                 </div>
                 <div class="skill-card">
                     <div class="icon-circle"><i class="fas fa-network-wired"></i></div>
@@ -490,8 +487,10 @@
           <!-- Footer section -->
           <footer class="footer-section">
             <div class="section-content">
-                <p class="copyright-text">© 2025 Nkosingiphile Omega Sithebe</p>
-
+                <p class="copyright-text">&copy; <span id="current-year"></span> Nkosingiphile Omega Sithebe</p>
+                <script>
+                    document.getElementById('current-year').textContent = new Date().getFullYear();
+                </script>
                 <p class="policy-text">
                     <a href="#" class="policy-link">All Rights Reserved</a>
                     <span class="separator">•</span>
