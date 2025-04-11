@@ -31,6 +31,7 @@
 
 
     /* Font size */
+    --font-size-xs: 0.4rem;
     --font-size-s: 0.9rem;
     --font-size-n: 1rem;
     --font-size-m: 1.12rem;
@@ -106,7 +107,6 @@ header {
     position: fixed;
     width: 100%;
     z-index: 5;
-    background-image: linear-gradient( 135deg, #FD6E6A 10%);
 }
 
 header .navbar {
@@ -149,9 +149,8 @@ header .navbar {
 
 .navbar .nav-menu .nav-link {
     padding: 10px 18px;
-    background-image: linear-gradient(135deg, #FD6E6A 10%);
     color: var(--grey-color);
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-s);
     border-radius: var(--border-radius-m);
     transition: 0.3s ease;
     text-decoration: none; /* Removes underline from links */
@@ -178,7 +177,7 @@ header .navbar {
     border: none;
     background: none;
     cursor: pointer;
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-s);
 }
 
 .navbar, #menu-close-button,
@@ -230,7 +229,7 @@ header .navbar {
     position: relative;
     color: #04551f; 
     
-    background: url('images/techBackground3.jpg') no-repeat center center/cover;
+    background: url('/images/techBackground3.jpg') no-repeat center center/cover;
 }
 
 
@@ -252,7 +251,7 @@ header .navbar {
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -331,7 +330,7 @@ header .navbar {
 
 /* Offer Title */
 .offer-title {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: black;
 }
@@ -369,7 +368,7 @@ header .navbar {
 }
 
 .offer-item h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0;
     color: black;
 }
@@ -382,7 +381,7 @@ header .navbar {
 
 /* Right Side - Image */
 .offer-image {
-    width: 40%;
+    width: 30%;
 }
 
 .offer-image img {
@@ -426,7 +425,6 @@ header .navbar {
 
 
 
-
 /* Footer section */
 .footer-section {
     padding: 20px 0;
@@ -446,7 +444,7 @@ header .navbar {
 
 
 .footer-section .social-link-list .social-link {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-xs);
 }
 
 .footer-section .social-link-list .social-link:hover {
@@ -458,14 +456,66 @@ header .navbar {
     color: var(--white-color);
 }
 
-/* Responsive media query code for max width 1024px */
-@media screen and (max-width: 1024px){
-    .course-section .course-list {
-        gap: 60px;
-    }
 
-    .course-section .course-list .course-item {
-        width: calc(100% / 3 - 60px);
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .offer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .offer-content, 
+    .offer-image {
+        width: 60%;
+    }
+    
+    .offer-image {
+        order: 2; /* Move image to bottom */
+    }
+    
+    .offer-content {
+        order: 1; /* Ensure content stays on top */
+    }
+}
+
+@media (max-width: 768px) {
+    .offer-section {
+        padding: 30px 20px;
+    }
+    
+    .offer-title {
+        font-size: 1.3rem;
+    }
+    
+    .offer-item {
+        gap: 10px;
+    }
+    
+    .offer-item i {
+        font-size: 24px;
+        min-width: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .offer-section {
+        padding: 20px 15px;
+    }
+    
+    .offer-title {
+        font-size: 1.2rem;
+    }
+    
+    .offer-description {
+        font-size: 0.9rem;
+    }
+    
+    .offer-item h3 {
+        font-size: 0.9rem;
+    }
+    
+    .offer-item p {
+        font-size: 0.8rem;
     }
 }
 
@@ -493,7 +543,7 @@ header .navbar {
     #menu-close-button,
      #menu-open-button {
         display: block;
-        font-size: var(--font-size-l);
+        font-size: var(--font-size-n);
     }
 
     .navbar #menu-close-button {
@@ -530,7 +580,7 @@ header .navbar {
         display: block;
         margin-top: 17px;
         background: var(--white-color);
-        font-size: var(--font-size-l);
+        font-size: var(--font-size-n);
     }
 
     .hero-section .section-content {
@@ -554,63 +604,10 @@ header .navbar {
         max-width: 270px;
         margin-right: 0;
     }
-
-    .about-section .section-content {
-        gap: 70px;
-        flex-direction: column-reverse;
-    }
-
-    .about-section .about-image-wrapper .about-image {
-        width: 100%;
-        height: 100%;
-        max-width: 250px;
-        aspect-ratio: 1;
-    }
-
-    .course-section .course-list {
-        gap: 30px;
-    }
-
-    .course-section .course-list .course-item {
-        width: calc(100% / 2 - 30px);
-    }
-
-    .course-section .course-list .course-item .course-image {
-        max-width: 200px;
-    }
-
-    .gallery-section .gallery-list {
-        gap: 30px;
-    }
-
-    .gallery-section .gallery-list .gallery-item  {
-        width: calc(100% / 2 - 30px);
-    }
-
-    .contact-section .section-content {
-        align-items: center;
-        flex-direction: column-reverse;   
-    }
 }
 
 /* Responsive media query code for max width 640px */
 @media screen and (max-width: 640px) {
-    .course-section .course-list {
-        gap: 60px;
-    }
-
-    .course-section .course-list .course-item,
-    .gallery-section .gallery-list .gallery-item {
-        width: 100%;
-    }  
-
-    .team-section .slider-wrapper {
-        margin: 0 0 30px;
-    }
-
-    .team-section .swiper-slide-button {
-        display: none;
-    }
 
     .footer-section .section-content {
         flex-direction: column;

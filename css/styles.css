@@ -106,7 +106,6 @@ header {
     position: fixed;
     width: 100%;
     z-index: 5;
-    background-image: linear-gradient( 135deg, #FD6E6A 10%);
 }
 
 header .navbar {
@@ -149,7 +148,6 @@ header .navbar {
 
 .navbar .nav-menu .nav-link {
     padding: 10px 18px;
-    background-image: linear-gradient(135deg, #FD6E6A 10%);
     color: var(--grey-color);
     font-size: var(--font-size-m);
     border-radius: var(--border-radius-m);
