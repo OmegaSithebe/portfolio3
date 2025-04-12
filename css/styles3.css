@@ -31,7 +31,6 @@
 
 
     /* Font size */
-    --font-size-xs: 0.4rem;
     --font-size-s: 0.9rem;
     --font-size-n: 1rem;
     --font-size-m: 1.12rem;
@@ -85,11 +84,12 @@ img {
 }
 
 .section-title {
+    color: var(--green-color);
+    font-size: 2em;
+    font-weight: bold;
     text-align: center;
     color: var(--green-color);
-    padding: 60px 0 100px;
-    text-transform: uppercase;
-    font-size: var(--font-size-xl);
+    margin-bottom: 10px;
 }
 
 .section-title::after {
@@ -111,7 +111,7 @@ header {
 
 header .navbar {
     display: flex;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -148,9 +148,9 @@ header .navbar {
 }
 
 .navbar .nav-menu .nav-link {
-    padding: 10px 18px;
+    padding: 10px 15px;
     color: var(--grey-color);
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-xs);
     border-radius: var(--border-radius-m);
     transition: 0.3s ease;
     text-decoration: none; /* Removes underline from links */
@@ -168,7 +168,7 @@ header .navbar {
 }
 
 .navbar .nav-menu .login-signup-button:hover {
-    color: #FD6E6A;
+    color: #f8e800;
     background: var(--green-color); /* Keep the hover state background green */
 }
 
@@ -177,7 +177,7 @@ header .navbar {
     border: none;
     background: none;
     cursor: pointer;
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-xs);
 }
 
 .navbar, #menu-close-button,
@@ -357,70 +357,153 @@ header .navbar {
   }
   
 
-  /* Concept Section */
-  .concept-section {
-    padding: 50px 20px;
-    text-align: center;
-    background: #fff;
-  }
-  
+ /* Concept Section */
+.concept-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.concept-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #8b0000, #ff0000, #8b0000);
+}
+
+.concept-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+  color: #111;
+  position: relative;
+  display: inline-block;
+}
+
+.concept-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #8b0000, #ff0000);
+  border-radius: 2px;
+}
+
+.concept-section h2 span {
+  font-weight: bold;
+  color: #8b0000;
+  position: relative;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(139, 0, 0, 0.1);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #8b0000, #ff0000);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.icon {
+  background: linear-gradient(135deg, #8b0000, #ff0000);
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 32px;
+  transition: all 0.4s ease;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(139, 0, 0, 0.3);
+}
+
+.card:hover .icon {
+  transform: rotateY(360deg) scale(1.1);
+  box-shadow: 0 8px 25px rgba(139, 0, 0, 0.4);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.card:hover h3 {
+  color: #8b0000;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+  transition: color 0.3s ease;
+}
+
+.card:hover p {
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .concept-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #111;
-  }
-  
-  .concept-section h2 span {
-    font-weight: bold;
-    color: #111;
-  }
-  
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
+      font-size: 2.2rem;
   }
   
   .card {
-    background: white;
-    border-radius: 12px;
-    padding: 30px 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
+      padding: 30px 20px;
   }
   
   .icon {
-    background: linear-gradient(135deg, #8b0000, #ff0000);
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 24px;
+      width: 70px;
+      height: 70px;
+      font-size: 28px;
   }
-  
-  .card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    font-weight: 600;
-    color: #222;
-  }
-  
-  .card p {
-    font-size: 0.95rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
+}
 
 /* Projects Section */
 .projects-section {
@@ -469,6 +552,139 @@ header .navbar {
     object-fit: cover;
     display: block;
   }
+
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+.faq-container {
+  max-width: 800px;
+  width: 100%;
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-header h2 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.faq-header h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #8b0000, #ff0000);
+}
+
+.faq-subtitle {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.faq-item:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-question {
+  background: #f0f0f0;
+}
+
+.question-icon {
+  color: #8b0000;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  width: 24px;
+  text-align: center;
+}
+
+.question-text {
+  flex: 1;
+  font-weight: 600;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.toggle-icon {
+  color: #777;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+  margin-left: 15px;
+}
+
+.faq-item.active .toggle-icon {
+  color: #8b0000;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  background: #fff;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding: 0 25px 20px;
+  border-top: 1px solid #eee;
+}
+
+.faq-answer p {
+  color: #555;
+  line-height: 1.7;
+  margin-top: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .faq-header h2 {
+    font-size: 2rem;
+  }
+  
+  .faq-question {
+    padding: 15px 20px;
+  }
+  
+  .question-text {
+    font-size: 1rem;
+  }
+}
 
 
 

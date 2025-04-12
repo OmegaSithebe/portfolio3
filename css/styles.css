@@ -84,11 +84,12 @@ img {
 }
 
 .section-title {
+    color: var(--green-color);
+    font-size: 2em;
+    font-weight: bold;
     text-align: center;
     color: var(--green-color);
-    padding: 60px 0 100px;
-    text-transform: uppercase;
-    font-size: var(--font-size-xl);
+    margin-bottom: 10px;
 }
 
 .section-title::after {
@@ -110,7 +111,7 @@ header {
 
 header .navbar {
     display: flex;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -147,9 +148,9 @@ header .navbar {
 }
 
 .navbar .nav-menu .nav-link {
-    padding: 10px 18px;
+    padding: 10px 15px;
     color: var(--grey-color);
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-xs);
     border-radius: var(--border-radius-m);
     transition: 0.3s ease;
     text-decoration: none; /* Removes underline from links */
@@ -167,7 +168,7 @@ header .navbar {
 }
 
 .navbar .nav-menu .login-signup-button:hover {
-    color: #FD6E6A;
+    color: #f8e800;
     background: var(--green-color); /* Keep the hover state background green */
 }
 
@@ -176,7 +177,7 @@ header .navbar {
     border: none;
     background: none;
     cursor: pointer;
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-xs);
 }
 
 .navbar, #menu-close-button,
@@ -259,7 +260,7 @@ header .navbar {
 
 /* About section */
 .about-section {
-    padding: 120px 0;
+    padding: 80px 0;
     background: var(--light-pink-color2);
 }
 
@@ -271,14 +272,18 @@ header .navbar {
 }
 
 .about-section .about-image-wrapper .about-image {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: var(--border-radius-circle2);
 }
 
 .about-section .about-details .section-title {
     padding: 0;
+}
+
+.about-details p{
+    font-size: 0.9rem;
 }
 
 .about-section .social-link-list {
@@ -288,14 +293,14 @@ header .navbar {
 }
 
 .skills {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .skill-item {
     background: #f9f9f9;
     border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -308,30 +313,30 @@ header .navbar {
 .skill-header {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .icon {
-    font-size: 2em;
+    font-size: 1rem;
     color: #d10000;
 }
 
 .skill-item h3 {
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
     margin: 0;
     color: #333;
 }
 
 .skill-item p {
-    font-size: 1em;
+    font-size: 0.8em;
     margin: 0;
     color: #555;
 }
 
 .closing-statement {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     text-align: center;
     margin-top: 30px;
@@ -340,7 +345,7 @@ header .navbar {
 
 .about-section .social-link-list .social-link {
     color: var(--green-color);
-    font-size: var(--font-size-xl);
+    font-size: 1rem;
     transition: 0.2s ease;
 }
 
@@ -358,14 +363,6 @@ header .navbar {
     color: #333;
 }
 
-.section-title {
-    color: var(--green-color);
-    font-size: 2.5em;
-    font-weight: bold;
-    text-align: center;
-    color: var(--green-color);
-    margin-bottom: 20px;
-}
 
 .experience-cards {
     display: flex;
@@ -393,20 +390,20 @@ header .navbar {
 }
 
 .experience-header h3 {
-    font-size: 1.4em;
+    font-size: 1.1em;
     font-weight: bold;
     margin: 0 0 10px 0;
     color: #333;
 }
 
 .experience-header p {
-    font-size: 1em;
+    font-size: 0.8em;
     margin: 5px 0;
     color: #555;
 }
 
 h4 {
-    font-size: 1.2em;
+    font-size: 0.8em;
     font-weight: bold;
     margin-top: 15px;
     color: var(--green-color);
@@ -423,7 +420,7 @@ h4 {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 1em;
+    font-size: 0.8em;
     margin: 10px 0;
     color: #555;
 }
@@ -431,7 +428,7 @@ h4 {
 .experience-list-item::before {
     content: "•";
     color: var(--green-color);
-    font-size: 1.2em;
+    font-size: 0.8em;
     margin-right: 8px;
 }
 
@@ -463,25 +460,25 @@ h4 {
 }
 
 .icon {
-    font-size: 40px;
+    font-size: 1.2em;
     color: var(--green-color);
     margin-bottom: 15px;
 }
 
 .education-title {
-    font-size: 24px;
+    font-size: 1em;
     margin: 10px 0;
     color: #333;
 }
 
 .institution {
-    font-size: 18px;
+    font-size: 1em;
     color: #1976d2;
     margin-bottom: 10px;
 }
 
 .year {
-    font-size: 16px;
+    font-size: 0.8em;
     color: #666;
     margin-bottom: 15px;
 }
@@ -495,7 +492,7 @@ h4 {
 
 .education-details li {
     padding: 8px 0;
-    font-size: 14px;
+    font-size: 0.8em;
     color: #555;
     border-bottom: 1px solid #eee;
 }
@@ -510,7 +507,7 @@ h4 {
 
 /* Swiper Slider Styles */
 .swiper {
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 
@@ -542,6 +539,25 @@ h4 {
 }
 
 /* Certifications Section */
+.section-title1 {
+    color: var(--green-color);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white-color);
+    margin-bottom: 10px;
+}
+
+.section-title1::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s );
+    background: var(--secondary-color);
+}
+
 .certifications-section {
     background: linear-gradient(to right, #000428, #004e92);
     padding: 50px 20px;
@@ -552,8 +568,6 @@ h4 {
 .certifications-section {
     margin-bottom: 30px;
 }
-
-
 
 .certification-card {
     background: #fff;
@@ -579,7 +593,7 @@ h4 {
 }
 
 .cert-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     margin: 10px 0 5px;
 }
@@ -587,7 +601,7 @@ h4 {
 .cert-provider,
 .cert-issued,
 .cert-skills {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin: 5px 0;
 }
 
@@ -797,6 +811,10 @@ h4 {
     justify-content: space-between;
 }
 
+.footer-section .section-content p {
+    font-size: 0.8em;
+}
+
 .footer-section :where(.copyright-text, .social-link, .policy-link) {
     color: var(--white-color);
     transform: 0.2s ease;
@@ -888,7 +906,7 @@ h4 {
         display: block;
         margin-top: 17px;
         background: var(--white-color);
-        font-size: var(--font-size-l);
+        font-size: 1em;
     }
 
     .hero-section .section-content {
@@ -1020,7 +1038,7 @@ h4 {
 
 .login-form .form-title {
     text-align: center;
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-m);
     margin-bottom: 20px;
     color: var(--grey-color);
 }
@@ -1133,88 +1151,6 @@ h4 {
 .home-page .user-options .option:hover {
     background: var(--secondary-color);
 }
-
-
-/* Video Courses Section */
-.video-courses-section {
-    padding: 60px 20px;
-    background: var(--grey-color);
-    color: var(--white-color);
-}
-
-.video-courses-section {
-    color: var(--primary-color);
-    font-size: var(--font-size-xl);
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.video-courses-section .course-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.video-courses-section .course-item {
-    width: calc(33% - 20px);
-    padding: 20px;
-    background: var(--dark-color);
-    border-radius: var(--border-radius-s);
-    text-align: center;
-    transition: 0.3s ease;
-}
-
-.video-courses-section .course-item:hover {
-    background: var(--brown-color);
-}
-
-.video-courses-section .course-item .course-title {
-    font-size: var(--font-size-l);
-    font-weight: var(--font-weight-semibold);
-    margin-bottom: 10px;
-}
-
-.video-courses-section .course-item .course-description {
-    font-size: var(--font-size-s);
-    color: var(--medium-gray-color);
-}
-
-
-/* Assign Course Button and Dropdown Styling */
-.assign-course {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
-    padding: 30px;
-}
-
-.assign-course .dropdown {
-    width: 250px;
-    padding: 10px;
-    font-size: var(--font-size-n);
-    border-radius: var(--border-radius-s);
-    border: 1px solid var(--medium-gray-color);
-    background: var(--white-color);
-    color: var(--grey-color);
-}
-
-.assign-course .assign-btn {
-    padding: 10px 20px;
-    background: var(--green-color);
-    color: var(--white-color);
-    font-size: var(--font-size-m);
-    border-radius: var(--border-radius-s);
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.assign-course .assign-btn:hover {
-    background: var(--secondary-color);
-}
-
-
 
 
 

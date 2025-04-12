@@ -31,7 +31,6 @@
 
 
     /* Font size */
-    --font-size-xs: 0.4rem;
     --font-size-s: 0.9rem;
     --font-size-n: 1rem;
     --font-size-m: 1.12rem;
@@ -85,11 +84,12 @@ img {
 }
 
 .section-title {
+    color: var(--green-color);
+    font-size: 2em;
+    font-weight: bold;
     text-align: center;
     color: var(--green-color);
-    padding: 60px 0 100px;
-    text-transform: uppercase;
-    font-size: var(--font-size-xl);
+    margin-bottom: 10px;
 }
 
 .section-title::after {
@@ -111,7 +111,7 @@ header {
 
 header .navbar {
     display: flex;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -148,9 +148,9 @@ header .navbar {
 }
 
 .navbar .nav-menu .nav-link {
-    padding: 10px 18px;
+    padding: 10px 15px;
     color: var(--grey-color);
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-xs);
     border-radius: var(--border-radius-m);
     transition: 0.3s ease;
     text-decoration: none; /* Removes underline from links */
@@ -168,7 +168,7 @@ header .navbar {
 }
 
 .navbar .nav-menu .login-signup-button:hover {
-    color: #FD6E6A;
+    color: #f8e800;
     background: var(--green-color); /* Keep the hover state background green */
 }
 
@@ -177,7 +177,7 @@ header .navbar {
     border: none;
     background: none;
     cursor: pointer;
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-xs);
 }
 
 .navbar, #menu-close-button,
